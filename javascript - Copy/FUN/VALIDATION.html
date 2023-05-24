@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <script>
+            function valid(){
+                var a=document.getElementById("usr").value;
+                var b=document.getElementById("pwd").value;
+                if(a=="vishalv123" && b=="123456"){
+                    alert("LOGIN SUCCESSFULL -- VISHAL");
+                    call();
+                    
+                }else if(a=="anto123" && b=="123456"){
+                    alert("LOGIN SUCCESSFULL -- ANTO JEBISH");
+                    call();
+                }else{
+                    alert("INVALID PASSWORD- TRY AGAIN");
+                }
+            }
+            function call(){
+                document.location.href="new.html";
+            }
+            
+
+        </script>
+        
+        
+        <form id="a">
+            <label style="color: #d8c80d">USERNAME:</label><br>
+            <input type="text" name="uname" id="usr"><br>
+            <label style="color: #d8c80d;">PASSWORD:</label><br>
+            <input type="password"  name="pass" id="pwd"><br><br>
+            <input type="button" style="font-size: 20px;" value="LOGIN" onclick="valid()" class="butt">
+        
+        </form>
+        <style>
+            body{
+                background-image: url("login.jpg");
+            }
+            #a{
+                padding: 200px;
+                text-align: center;
+                width: auto;
+                font-size: 20px;
+            }
+            .butt{
+                background-color: crimson;
+                color: darkblue;
+            }
+        </style>
+    </body>
+</html>

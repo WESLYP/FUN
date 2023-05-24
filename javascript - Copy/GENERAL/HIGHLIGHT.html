@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    </head>
+    <body>
+        
+        <style>
+            p{
+                background-color: blue;
+                padding:40px;
+            }
+            p.hiGhLight{
+                background-color: yellow;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $("p").hover(function(){
+                    $(this).addClass("hiGhLight");
+                },function(){
+                    $(this).removeClass("hiGhLight");
+                });
+            });
+            $(document).ready(function(){
+                $(".a").click(function(){
+                    $(this).slideUp();
+                });
+            });
+        </script>
+
+        <p class="a">WELCOME TO JQRY PLEASE MOUSE OVER ME OR CLICK ME</p>
+        <p>WELCOME TO JQRY PLEASE MOUSE OVER ME</p>
+        <p class="a">WELCOME TO JQRY PLEASE MOUSE OVER ME OR CLICK ME</p>
+        <p>WELCOME TO JQRY PLEASE MOUSE OVER ME</p>
+        <p class="a">WELCOME TO JQRY PLEASE MOUSE OVER ME OR CLICK ME</p>
+        <p>WELCOME TO JQRY PLEASE MOUSE OVER ME</p>
+        <p class="a">WELCOME TO JQRY PLEASE MOUSE OVER ME OR CLICK ME</p>
+
+    </body>
+</html>

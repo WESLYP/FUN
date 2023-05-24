@@ -1,0 +1,21 @@
+<html>
+    <body>
+        
+    <form>
+        NUM1  <input type="text" id="tbox1"><br><br>
+        NUM2  <input type="text" id="tbox2"><br><br>
+        <input type="button" value="press" onclick="oc()">
+        <p id="appear">ANS WILL APPEAR HERE</p>
+    </form>
+
+    <script>
+        function oc(){
+            var a=Number(document.getElementById("tbox1").value);
+            var b=Number(document.getElementById("tbox2").value);
+            var c=a+b;
+            var ans=document.getElementById("appear");
+            ans.innerHTML=c
+        }
+    </script>
+    </body>
+</html>

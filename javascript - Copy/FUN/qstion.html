@@ -1,0 +1,68 @@
+<html>
+    <body>
+        <h1 style="color:yellowgreen">QUESTION SECTION FOR ANTO AND VISHAL</h1>
+        <br><br>
+        <div >
+            <p>1. HOW ARE YOU NOW ?</p>
+            <input type="radio" id="1" name="qstion1" >
+            <label for="1">FINE </label>
+            <input type="radio" id="2" name="qstion1" >
+            <label for="2">NOT FINE</label>
+        </div>
+
+        <div >
+            <p>2. HAVE YOU COMPLETED YOUR BREAKFAST ?</p>
+            <input type="radio" id="3" name="qstion2" >
+            <label for="3">YES </label>
+            <input type="radio" id="4" name="qstion2" >
+            <label for="4">NO</label>
+        </div>        
+        <div >
+            <p>3. FIND THE MOVIE ?</p>
+            <audio controls>
+                <source src="audio.mp3">
+            </audio><br><br>
+            <input type="radio" id="5" name="qstion3" >
+            <label for="5">VELONIE </label>
+            <input type="radio" id="6" name="qstion3" >
+            <label for="6">ENTHIRAN</label>
+        </div><br><br>
+        <input type="button" value="SUBMIT" onclick="qstion()" class="a">
+
+        <script>
+            function qstion(){
+                if(document.getElementById("2").checked==true){
+                    alert("SOMETHING IS A WRONG ANSWER -- PLEASE CHECK");
+                }
+                else if(document.getElementById("4").checked==true){
+                    alert("SOMETHING IS A WRONG ANSWER -- PLEASE CHECK");
+                }
+                else if(document.getElementById("6").checked==true){
+                    alert("SOMETHING IS A WRONG ANSWER -- PLEASE CHECK");
+                }
+                else if(document.getElementById("1").checked==false && document.getElementById("2").checked==false && document.getElementById("3").checked==false && document.getElementById("4").checked==false && document.getElementById("5").checked==false && document.getElementById("6").checked==false){
+                    alert("COMPLETE THE OPTIONS");
+                }
+                else{
+                    alert("CONGRATS YOU PASSED THE TEST");
+                    document.location.href="FINAL.html"
+                }
+            }
+        </script>
+        <style>
+            body{
+                background-color: rgb(55, 143, 220);
+            }
+            div{
+                font-size: 20px;
+                color: rgb(238, 238, 15);
+            }
+            .a{
+                font-size: 20px;
+                padding: auto;
+                width: 20%;
+                height: 8%;
+            }
+        </style>
+    </body>
+</html>

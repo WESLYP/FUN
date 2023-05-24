@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <div id="abc">
+            <h1>WELCOME</h1>
+            <button type="button" onclick="m1()">Change Data</button>
+        </div>
+        <script>
+            function m1(){
+                const xhttp=new XMLHttpRequest();
+                xhttp.onload=function(){
+                    document.getElementById("abc").innerHTML=this.responseText;
+                }
+                xhttp.open("GET","http://www.google.co.in/search?q=welcome");
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>

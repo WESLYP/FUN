@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <style>
+            div{
+                background-color: red;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $(".abcHide").click(function(){
+                    $("div").hide("fast");
+                });
+                $(".abcShow").click(function(){
+                    $("div").show("ver-slow");
+                });
+            });
+
+        </script>
+
+        <button class="abcHide">HIDE</button>
+        <button class="abcShow">SHOW</button>
+
+        <div>
+            <h1>WELCOME</h1>
+            <p>HI HOW ARE YOU</p>
+        </div>
+    </body>
+</html>

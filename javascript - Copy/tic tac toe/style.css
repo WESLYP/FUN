@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:rgb(237, 186, 76)
+}
+.player{
+    color: #bc124b;
+    text-align: center;
+}
+
+.heading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 2%;
+    font-weight: light;
+    text-align: center;
+}
+
+.board{
+    width: 400px;
+    height: 400px;
+    margin: 8% auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-box{
+    width: 133.33px;
+    height: 133.33px;
+    font-size: 90px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content:  center;
+}
+
+.horizondal-line{
+    border-bottom: 3px solid black;
+}
+
+.vertical-line{
+    border-right: 3px solid black; 
+}
+
+
+.inner-box:hover{
+    cursor: pointer;
+    background-color: rgba(84, 13, 190, 0.2);
+}
+
+.inner-box.used{
+    cursor: not-allowed;
+}
+
+.close {
+    background: teal;
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+.close:after {
+    content: '';
+    height: 60px;
+    border-left: 2px solid #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 28px;
+}
+
+.close:before {
+    content: '';
+    height: 60px;
+    border-left: 2px solid #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 28px;
+}
+.close{
+    width: 133.33px;
+    height:133.33px;
+}
+.hiGhLight{
+    background-color: yellow;
+}
+.span {
+    content: "\2715";
+  }
+.xx1{
+    background-color: blue;
+}
+.xx2{
+    background-color: green;
+}
+.contentX {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    background-color: #7db347;
+    box-sizing: border-box;
+    padding: 50px;
+    z-index: 100;
+    display: none;
+    /*to hide popup initially*/
+}
+.contentY{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    background-color: #ace573;
+    box-sizing: border-box;
+    padding: 50px;
+    z-index: 100;
+    display: none;
+    /*to hide popup initially*/
+}
+.contentZ {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    background-color: #7db347;
+    box-sizing: border-box;
+    padding: 50px;
+    z-index: 100;
+    display: none;
+    /*to hide popup initially*/
+}
+
+.abc{
+    font-size: 30px;
+}
+.def{
+    font-size: 30px;
+}

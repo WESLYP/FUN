@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>PRAISE THE LORD</title>
+    </head>
+
+    <body>
+        <script>
+            function omo(){
+                alert("YOU ARE ON THE WORDS");
+            }
+            function dbl(){
+                //document.write("CHANGED");
+                var dc=document.getElementById("a");
+                dc.innerHTML="CHANGED";
+                alert("YOU ARE ON THE TEXT");
+            }
+            function okd(){
+                document.getElementById("ok");
+                alert("NOOOO");
+            }
+
+        </script>
+
+        <h1 onmouseover="omo()">PLACE THE MOUSE HERE</h1>
+        <h1 ondblclick="dbl()" id="a">PLACE MOUSE OVER ME -- AND DOUBLE CLICK</h1>
+        <input type="text" id="ok" onkeyup="okd()">
+    </body>
+
+</html>

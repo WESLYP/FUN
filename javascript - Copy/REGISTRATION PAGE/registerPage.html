@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>REGISTRATION PAGE</title>
+    </head>
+
+    <body>
+
+        <style>
+            body{
+                background-color: aqua;
+            }
+            #image{
+                text-align: center;
+                                            
+            }
+            #forum{
+                margin: 100;
+                text-align: center;
+                padding: 10px;
+                border: 10px solid green;
+            }
+            
+
+        </style>
+        <div id="image">
+        <img src="blank.jpg" alt="blank">
+        </div>
+        <form id="forum">
+            FIRST NAME:<br>
+            <input type="text" id="fn"><br><br>
+            LAST NAME:<br>
+            <input type="text" id="ln"><br><br>
+            GENDER:<br>
+            <input type="radio" id="male" name="gender">
+            <label for="male">MALE</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">FEMALE</label><br><br>
+
+            USERNAME:<br>
+            <input type="text" id="un"><br><br>
+            PASSWORD:<br>
+            <input type="password" id="pwd"><br><br>
+            <input type="button" value="REGISTER" onclick="show()">
+
+        </form>
+        <div id="container"></div>
+        <script>
+            function show(){
+            document.write("TO SEE YOUR DETAILS CLICK BELOW<br>");
+            var button=document.createElement("button");
+            button.innerHTML="PRESS HERE";
+            button.className="btn-styled";
+            button.type="button";
+
+            
+            button.onclick=function(){
+                result();
+            };
+            // var container = document.getElementById('container');
+            // container.appendChild(btn);
+            document.body.appendChild(button);
+
+            }
+
+            function result(){
+            var fn=document.getElementById("fn").value;
+            var ln=document.getElementById("ln").value;
+            var un=document.getElementById("un").value;
+            var pwd=document.getElementById("pwd").value;
+            document.write("YOUR FIRSTNAME IS---"+fn+"<br>");
+            document.write("YOUR LASTNAME IS---"+ln+"<br>");
+            document.write("YOUR USERNAME IS---"+un+"<br>");
+            document.write("YOUR PASSWORD IS---"+pwd+"<br>");
+            }
+
+            function data(){
+                
+                return fnn;
+            }
+        </script>
+    
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+            function valid(){
+                var a=document.getElementById("usr").value;
+                var b=document.getElementById("pwd").value;
+                if(a==null || a==""){
+                    alert("INVALID USERNAME");
+                    return false;
+                }else if(b.length<6){
+                    alert("INVALID PASSWORD");
+                    return false;
+                }
+            }
+
+        </script>
+        
+        <form onsubmit="valid()">
+            USERNAME:<br>
+            <input type="text" name="uname" id="usr"><br>
+            PASSWORD:<br>
+            <input type="password"  name="pass" id="pwd"><br><br>
+            <input type="submit" value="REGISTER" id="sub">
+        </form>
+    </body>
+</html>

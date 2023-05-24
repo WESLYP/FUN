@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="aa">
+        <div id="a">
+        <h1>CONGRATS FOR COMPLETING</h1>
+        
+        <h3>PLEASE ENTER GMAIL CREDENTIALS BELOW</h3>
+        </div>
+
+        <input type="email"  placeholder="EMAIL" id="w" style="font-size: 20px;">
+        
+        <input type="submit" value="GENERATE OTP" id="z" onclick="final()" style="font-size: 20px">
+        </div>
+        
+
+        <script>
+            
+            var sd="av";
+            var FinalOtp="";
+            function final(){
+                var gMail=document.getElementById("w").value;
+                if(gMail.length=='' || gMail.length<=10){
+                    alert("INVALID GMAIL");
+                }else{
+
+                function otp(){
+                var a=Math.floor(Math.random()*90000)+ 10000;
+                var b=a.toString()
+                return b;
+            }
+                FinalOtp=otp();
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "weslywesly1414@gmail.com",
+                    Password : "2E81800E3D2D63BCA4B8BE966F8388D440B7",
+                    To : document.getElementById("w").value,
+                    From : "weslywesly1414@gmail.com",
+                    Subject : "THANK YOU",
+                    Body : "YOUR OTP IS "+FinalOtp+". THANK YOU VERY MUCH FOR USING THIS WEBSITE.THANK YOU FOR YOUR PATIENCE.HAVE A GOOD DAY."
+                }).then(
+                alert("THANK YOU FOR USING THIS WEBSITE AND MAIL IS SENT TO YOU")
+                );
+
+                sd=FinalOtp;
+                
+                $(document).ready(function(){
+                    $("#aa").replaceWith("<input type='text' id='cs' placeholder='ENTER OTP'><br><br><input type='button' id='bt' value='SUBMIT' onclick='speed()'>");
+                });
+
+                
+
+                
+
+
+                
+            }   
+            }
+            function speed(){
+                
+                if(sd.toString()==(document.getElementById("cs").value)){
+                alert("SUCCESS");
+                document.location.href="SuperFinal.html";
+
+            }else{
+                alert("INVALID");
+            }  
+            
+
+            }    
+            
+
+        </script>
+        <style>
+            body{
+                background-image: url("final.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            #a{
+                color: rgb(40, 15, 148);
+            }
+            #aa{
+                text-align: center;
+                margin: auto;
+                padding: 20px;
+            }
+            #cs{
+                text-align: center;
+                margin: auto;
+                position: relative;
+                top: 40%;
+                left: 40%;      
+            }
+            #bt{
+                margin: auto;
+                position: relative;
+                top: 40%;
+                left: 47%;      
+
+            }
+        </style>
+        
+
+    </body>
+</html>

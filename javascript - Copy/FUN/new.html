@@ -1,0 +1,85 @@
+<html>
+    <body>
+        <div id="a">
+        <h1>BASIC QUESTIONS FOR ANTO AND VISHAL</h1>
+        <h2>READ THE INSTRUCTIONS BELOW TO ATTEND THE TEST</h2>
+        </div>
+        <div id="b">
+        <ol>
+            <li>THE TEST SHOULD BE ATTEND AFTER GETTING PERMISSIONS FROM WESLY</li><br>
+            <li>SHOULD NOT BE DISSCUSSED</li><br><br>
+        </ol>
+        </div>
+        <div id="c">
+        <input type="checkbox" name="check">
+        <label for="check">IF THE ABOVE INSTRUCTIONS ARE CLEAR, CLICK HERE AND CLICK THE BUTTON </label><br><br>
+        <input type="checkbox" name="check">
+        <label for="check">IF EVERYTHING IS OK CLICK HERE AND CLICK THE BUTTON </label><br><br>
+        <input type="checkbox" name="check">
+        <label for="check">PLEASE CLICK HERE TO PROCEED FURTHER AND CLICK THE BUTTON </label><br><br>
+        <input type="checkbox" name="check">
+        <label for="check">IF THE ABOVE INSTRUCTIONS ARE CLEAR CLICK HERE AND CLICK THE BUTTON </label><br><br>
+        <br><br><br>
+        </div>
+        <input type="button" value="OKkkk" id="ok" onclick="okk()">
+
+        <script>
+             var count=0;
+            function okk(){
+            var chk=document.getElementsByName("check");
+           
+            for(var i=0;i<chk.length;i++){
+                if(chk[i].checked==true)count++;
+            }
+            
+            ok();
+        }
+            function ok(){
+                if(count==4){
+                    document.location.href="qstion.html";
+                }
+                else{
+                    alert("PLEASE CLICK THE CHECK BOXES"); 
+                    count=0;
+                }
+
+            }
+            /*
+            function ok(){
+            if(document.getElementsByClassName("check").checked==true){
+            
+                document.location.href="qstion.html";
+            
+            }else{
+                alert("PLEASE CLICK THE CHECK BOX");
+            }
+            
+    }
+    */
+        </script>
+        <style>
+            body{
+                background-color:#c6e3c0;
+            }
+            #a{
+                color: ivory;
+            }
+            #b{
+                color: purple;
+            }
+            #c{
+                color: blue;
+                width: auto;
+                height: auto;
+            }
+            #ok{
+                background-color: blue;
+                color: yellow;
+                padding: 10px;
+                width: 30%;
+                height: 10%;
+            }
+        </style>
+        
+    </body>
+</html>
